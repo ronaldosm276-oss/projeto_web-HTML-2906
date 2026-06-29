@@ -1,0 +1,7 @@
+git remote add origin https://github.com/ronaldosm276-oss/projeto_web-HTML-2906.git
+git branch -M main
+git push -u origin main
+
+
+vai focar em html por enquanto
+até sexta devo ser capaz de fazer layouts sem problema
