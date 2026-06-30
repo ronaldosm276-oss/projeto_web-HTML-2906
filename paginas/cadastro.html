@@ -3,10 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastramento</title>
 </head>
 <body>
-    <a href="../index.html">Página Inicial</a> |
+
+    <div id="links">
+
+        <a href="../index.html">Página Inicial</a> |
+        <a href="other/another.html">Outros</a> |
+        <a href="textos.html">Textos</a> |
+        <a href="cadastro.html">Cadastros</a> |
+        <a href="listas.html">Listas</a> |
+        <a href="tabela.html">Tabelas</a> |
+        <a href="imagens.html">Imagens</a> |
+
+    </div>
+
     <h3>Cadastro</h3>
+
+    <div id="form">
+        <h3>Formulário HTML</h3>
+        <form name="form-pessoa" id="form-pessoa" method="post">
+
+            <label for="nome">NOME</label>
+            <input type="text" name="nome" id="nome" class="input-txt01" maxlength="6" required placeholder="Informe seu nome">
+
+            <br>
+
+            <label for="cpf">CPF</label>
+            <input type="number" name="cpf" id="cpf" class="input-txt02" maxlength="14" required placeholder="Informe seu CPF">
+
+            <br>
+            
+            <label for="cpf">CPF</label>
+            <input type="number" name="cpf" id="cpf" class="input-txt02" maxlength="14"  pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required placeholder="Informe seu CPF">
+
+            <br> <br>
+
+            <label for="sexo">sexo</label>
+            <input type="radio" name="sexo" id="sxF" class="input-radio" value="F" required> FEMININO
+            <input type="radio" name="sexo" id="sxM" class="input-radio" value="M" required> MASCULINO
+            <input type="radio" name="sexo" id="sxN" class="input-radio" value="N" required> NÃO DECLARAR
+
+            <br>
+            <br>
+           
+
+            <select name="estado" id="estado" >
+                <option>Selecione o Estado</option> 
+                <option value="AL">ALAGOAS</option>
+                <option value="BH">BAHIA</option>
+                <option value="PE">PERNAMBUCO</option>
+                <option value="PB">PARAÍBA</option>
+                <option value="RN">RIO GRANDE DO NORTE</option>
+                <option value="CE">CEARÁ</option>
+                <option value="PI">PIAUÍ</option>
+                <option value="MA">MARANHÃO</option>
+                <option value="SE">SERGIPE</option>
+            </select>
+
+            <br> <br>
+
+            <label for="preferencias">Preferências</label>
+            <input type="checkbox" name="estudo" id="estudo" class="input-check" value="estudo">Estudo
+            <input type="checkbox" name="viagem" id="estudo" class="input-check" value="viagem">Viagem
+            <input type="checkbox" name="trabalho" id="estudo" class="input-check" value="trabalho">Trabalho
+            <input type="checkbox" name="compras" id="estudo" class="input-check" value="compras">Compras
+
+            <br>
+            <br>
+
+            <label for="comentario">Comentário</label>
+            <br>
+
+            <textarea name="comentario" id="comentario" cols="" rows=""></textarea>
+            
+            <br><br>
+
+            <label for="senha">SENHA</label>
+            <input type="text" nome="senha" id="senha" class="input-txt02" placeholder="Informe sua senha" maxlength="6" required>
+
+            <label for="datanascimento">Nascimento</label>
+            <input type="date" nome="datanascimento" id="datanascimento" class="input-txt02" required>
+
+            <label for="quantidade">Quantidade</label>
+            <input type="range" nome="quantidade" id="quantidade" class="input-txt02" min="0" max="10" step="0.1" required>
+            
+            <br><br>
+            <button type="submit" id="btn-Enviar" >Enviar</button>
+            <button type="reset" id="btn-Limpar" >Limpar</button>
+            <button id="btn" class="btn" >Botão Misterioso</button>
+            
+
+
+        </form>
+
+        
+
+    </div>
+
 </body>
 </html>
+<!--
+    ANOTAÇÕES FORMULÁRIO
+    - Importante para pegar dados do usuário
+    usamos tags form
+    atributo name
+    atributo id
+    atributo method (get post)
+    google usa método get, concatenação de dados. mais fácil de invadir
+    post tem seus problemas, mas tem mais segurança...
+   -  action serve para dizer para onde os dados irão, para um email, para uma api, etc
+
+    value = atributo bem importante, diz o que vai para o banco de dados
+
+
+    label - identificação  
+    for =
+
+    php e html, algumas linguagens não reconhecem o id, só o atributo name
+
+    maxlenght = quantos caracteres pode ter no formulário
+    é diferente de max
+    max = 
+
+    required = preencha esse campo
+
+    placeholder = 
+
+    concatenação?
+
+    checked - atributo que já preenche elemento ao carregar página
+    selected - mesma coisa para selector
+
+    pattern = como o código deve se parecer, tipo dá para configurar para formartar estilo CPF
+
+-->
