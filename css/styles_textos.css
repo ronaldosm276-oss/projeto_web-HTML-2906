@@ -1,0 +1,38 @@
+/*
+seletor{
+    propriedade: valor;
+    propriedade: valor;
+}
+exemplo...
+seletor = id ou class eu acho? Pode ser tags também, tipo tags div, tag p
+
+em = pega tamanho padrão da fonte e multiplica pelo valor
+3em = 3 vezes o tamanho normal
+
+aplicando em tag, nome tag e abre chave
+para referencia a id, pega #*nome da div*
+para referencia de class, pega .*nome da class*
+
+*/
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    text-align: justify;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-indent: 40px;
+    
+}
+#paragrafo01{
+    margin-left: 150px;
+    text-indent: 40px;
+}
+
+#paragrafo02{
+    margin-right: 150px;
+}
+
+.paragrafos{
+    color:rgb(102, 102, 74)
+}
