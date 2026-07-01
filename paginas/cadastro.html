@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastramento</title>
+    <link rel="stylesheet" href="../css/style_formulario.css">
 </head>
 <body>
 
@@ -26,7 +27,7 @@
         <form name="form-pessoa" id="form-pessoa" method="post">
 
             <label for="nome">NOME</label>
-            <input type="text" name="nome" id="nome" class="input-txt01" maxlength="6" required placeholder="Informe seu nome">
+            <input type="text" name="nome" id="nome" class="input-txt01" maxlength="6" required  placeholder="Informe seu nome">
 
             <br>
 
@@ -36,11 +37,12 @@
             <br>
             
             <label for="cpf">CPF</label>
-            <input type="number" name="cpf" id="cpf" class="input-txt02" maxlength="14"  pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required placeholder="Informe seu CPF">
+            <input type="number" name="cpf" id="cpf" class="input-txt02" maxlength="6" required placeholder="Informe seu CPF"   
+            >
 
             <br> <br>
 
-            <label for="sexo">sexo</label>
+            <label for="sexo">Sexo</label>
             <input type="radio" name="sexo" id="sxF" class="input-radio" value="F" required> FEMININO
             <input type="radio" name="sexo" id="sxM" class="input-radio" value="M" required> MASCULINO
             <input type="radio" name="sexo" id="sxN" class="input-radio" value="N" required> NÃO DECLARAR
@@ -48,7 +50,7 @@
             <br>
             <br>
            
-
+            <label for="estado"></label>
             <select name="estado" id="estado" >
                 <option>Selecione o Estado</option> 
                 <option value="AL">ALAGOAS</option>
@@ -76,12 +78,12 @@
             <label for="comentario">Comentário</label>
             <br>
 
-            <textarea name="comentario" id="comentario" cols="" rows=""></textarea>
+            <textarea name="comentario" id="comentario" ></textarea>
             
             <br><br>
 
             <label for="senha">SENHA</label>
-            <input type="text" nome="senha" id="senha" class="input-txt02" placeholder="Informe sua senha" maxlength="6" required>
+            <input type="text" nome="senha" id="senha" class="input-txt02" placeholder="Informe sua senha" maxlength="10" required>
 
             <label for="datanascimento">Nascimento</label>
             <input type="date" nome="datanascimento" id="datanascimento" class="input-txt02" required>
@@ -138,4 +140,8 @@
 
     pattern = como o código deve se parecer, tipo dá para configurar para formartar estilo CPF
 
+
+    ccs -------
+    algumas tags por padrão ocupam toda linha, tipo div e h3
+    css pode mexer nisso
 -->

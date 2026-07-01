@@ -1,0 +1,61 @@
+/*
+Quando deu display block, quer dizer que todos labels que se comportavam lado a lado, vão se comportar como div e h3, ocupando uma linha por si mesmo
+
+margin para não ficar grudado um no outro
+margin top right bottom left
+margin 20px para top bottom, 0px para right left
+
+input[type="text"]{
+    height: 10px;
+    border-radius: 5px;
+}
+
+padding - da borda para dentro do elemento
+margin - de fora da borda do elemento
+
+input:: para pseudoclasses
+input::placeholder
+
+*/
+
+label{
+    display: block;
+    margin: 6px 0px;
+}
+
+.input-txt01, .input-txt02{
+    height: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+select{
+    height: 20px;
+}
+
+.input-txt01{
+    width: 400px;
+}
+
+.input-txt02, select{
+    width: 120px;
+}
+textarea{
+    height: 125px;
+    width: 250px;
+    resize: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+input::placeholder{
+    color: rgb(255, 0, 0);
+    font-size: 0.9em;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    width: 30px;
+    height: 20px;
+}
